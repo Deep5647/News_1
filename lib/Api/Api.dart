@@ -1,17 +1,18 @@
 import 'dart:convert';
-
 import 'package:http/http.dart' as http;
 
-import 'package:exam_1/modal/api_modal.dart';
+import '../modal/api_modal.dart';
+
+class APIHelper {
+  APIHelper._();
+
+  static final APIHelper apiHelper = APIHelper._();
+
+  String apiKey = "989a4495824248bfbb4d43051fb54cf0";
 
 
-class Apihelper {
-  Apihelper._();
-
-  static final Apihelper apiHelper = Apihelper._();
-
-  Future<List<DataModal>?> fetchedPhotos([String searchedText = ""]) async {
-    String api = "https://newsapi.org/v2/top-headlines/sources?apiKey=API_KEY";
+  Future<List<DataModal>?> fetchedQuote() async {
+    String api = "https://newsapi.org/v2/top-headlines/sources?apiKey=$apiKey";
 
     http.Response response = await http.get(Uri.parse(api));
 
@@ -19,22 +20,19 @@ class Apihelper {
       String data = response.body;
 
       Map decodedData = jsonDecode(data);
-      List news = decodedData['sources'];
 
-      // News news = News.fromJson(decodedData);
+      List newsData = decodedData['sources'];
 
-      return news
-          .map(
-            (e) => DataModal(
-          id: e['id'],
-          name: e['name'],
-          description: e['description'],
-          url: e['url'],
-          category: e['category'],
-          language: e['language'],
-          country: e['country'],
-        ),
-      )
+      return newsData
+          .map((e) => DataModal(
+        id: e['id'],
+        name: e['name'],
+        description: e['description'],
+        url: e['url'],
+        category: e['category'],
+        language: e['language'],
+        country: e['country'],
+      ))
           .toList();
     }
     return null;
