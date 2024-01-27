@@ -1,3 +1,8 @@
+![E1](https://github.com/Deep5647/News_1/assets/155975421/8146699b-4a8b-43ad-a2ec-6e10ec1dc769)
+![E2](https://github.com/Deep5647/News_1/assets/155975421/e9398b0d-9fe3-48ef-abf4-6ba776ab5b7a)
+![E3](https://github.com/Deep5647/News_1/assets/155975421/459ea427-b9fd-4e0f-b2ef-6f450cace130)
+![E4](https://github.com/Deep5647/News_1/assets/155975421/b8bd9db6-35e1-4afa-9cb1-9f63aa461595)
+![E5](https://github.com/Deep5647/News_1/assets/155975421/4a0df0f6-e137-463e-a7b2-54b93846515c)
 
 
 https://github.com/Deep5647/News_1/assets/155975421/a1a4a96b-ddf8-45c9-b6d5-1be00553018d
